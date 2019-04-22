@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+make
+mpiexec --oversubscribe --np 3 ./test_ls -jac
+mpiexec --oversubscribe --np 4 ./test_ls -cons
